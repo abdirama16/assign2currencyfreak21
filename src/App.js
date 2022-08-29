@@ -19,7 +19,7 @@ function App() {
 
   const GetDataFromFetch = () => {
     useEffect(()=>{
-      axios.get('https://api.currencyfreaks.com/latest?apikey=e7e564b6c83b4616aed4a723a5da437c&symbols=CAD,EUR,IDR,JPY,CHF,GBP')
+      axios.get('https://api.currencyfreaks.com/latest?apikey=b759ab5369c34d30897600785d3fb80d&symbols=CAD,EUR,IDR,JPY,CHF,GBP')
       .then(({data})=>{
         setRatesCur(data.rates)
       })
